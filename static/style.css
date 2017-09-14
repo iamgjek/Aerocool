@@ -1,1 +1,47 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+
+body {
+	background-color: #23919A;
+}
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+#menu {
+	width: 40px;
+}
+#sidebar {
+	width: 342px;
+}
+#profile {
+	background-color: #464646;
+	height: 210px
+}
+#profile .col-md-6, #profile.col-md-10 {
+	padding-left: 0;
+	padding-right: 0;
+}
+#profile p {
+	font-size: .8rem;
+	text-align: center;
+	line-height: .8rem;
+	margin-bottom: 0;
+	margin-top: -16px;
+}
+#profile ul li p {
+	margin-top: -14px;	
+}
+#profile ul li {
+	display: inline-block;
+	width: 44%;
+	margin: 0 -4px 0 2px;
+}
+#deviceSelection ul li {
+	display: inline-block;
+	width: 32%;
+}
