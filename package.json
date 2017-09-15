@@ -1,8 +1,8 @@
 {
-  "name": "electron-vue",
+  "name": "Aerocool",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "samuelayo <ayoogundipe2005@gmail.com>",
+  "author": "Ian <iamgjek@gmail.com>",
   "private": true,
   "main": "elect.js",
   "scripts": {
