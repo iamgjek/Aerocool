@@ -22,7 +22,7 @@ ul {
 	background-color: #464646;
 	height: 210px
 }
-#profile .col-md-6, #profile.col-md-10 {
+#profile .col-md-6, #profile.col-md-10, .col-md-10 {
 	padding-left: 0;
 	padding-right: 0;
 }
@@ -44,4 +44,7 @@ ul {
 #deviceSelection ul li {
 	display: inline-block;
 	width: 32%;
+}
+#accordion1, #accordion2, #accordion3 {
+	width: 100%;
 }
