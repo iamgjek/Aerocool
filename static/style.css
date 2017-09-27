@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
 
 body {
+	width: 1200px;
 	background-color: #23919A;
 }
 .row {

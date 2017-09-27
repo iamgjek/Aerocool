@@ -49,11 +49,15 @@
 
 <script>
 export default {
+  name: 'device1Presets',
   data () {
     return {
       msg: 'Card 1-'
     }
   },
+  // props: {
+  //   isActive: true
+  // },
   methods: {
     showSetting(num) {
       $('.setting').addClass('d-none')
