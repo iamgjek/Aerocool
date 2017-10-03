@@ -1,7 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import "guideline";
 
 body {
 	width: 1200px;
+	font-family: "Raleway", "Raleway Light", -apple-system, BlinkMacSystemFont;
 	background-color: #23919A;
 }
 #sidebar {

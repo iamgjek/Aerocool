@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 // bootstrap
-import 'assets/scss/bootstrap/bootstrap.scss'
+import 'bootstrap/scss/bootstrap.scss'
 import 'assets/scss/style.scss'
 import 'bootstrap/dist/js/bootstrap'
 //require the vu resource library
