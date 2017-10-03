@@ -2,6 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+// bootstrap
+import 'assets/scss/bootstrap/bootstrap.scss'
+import 'assets/scss/style.scss'
+import 'bootstrap/dist/js/bootstrap'
 //require the vu resource library
 var VueResource = require('vue-resource');
 //tell vue to use vue resource

@@ -10,6 +10,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5",
+    "tether": "^1.4.0",
     "vue": "^2.1.0",
     "vue-resource": "^1.1.0"
   },
@@ -34,8 +38,10 @@
     "html-webpack-plugin": "^2.8.1",
     "http-proxy-middleware": "^0.17.2",
     "json-loader": "^0.5.4",
+    "node-sass": "^4.5.3",
     "opn": "^4.0.2",
     "ora": "^0.3.0",
+    "sass-loader": "^6.0.6",
     "semver": "^5.3.0",
     "shelljs": "^0.7.4",
     "url-loader": "^0.5.7",
