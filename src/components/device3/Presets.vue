@@ -1,5 +1,5 @@
 <template>
-  <div id="device3Presets" class="device device3 col-md-10 row d-none">
+  <div id="device3Presets" class="device device3 d-none">
     <div id="accordion3" role="tablist">
       <div class="card" @click="showSetting(1)">
         <a data-toggle="collapse" href="#collapse3-1" aria-expanded="true" aria-controls="collapse3-1">

@@ -2,23 +2,25 @@
   <div id="container" class="row">
     <div id="sidebar">
       <div class="row">
-        <div class="col-md-1">
+        <div class="leftContralBar">
           <p>M</p>
         </div>
-        <div id="profile" class="col-md-10 row">
-          <div class="col-md-6">
-            <img src="../assets/logo.png" class="img-thumbnail">
-            <p>Profile A</p>
+        <div>
+          <div id="profile" class="row">
+            <div id="profileSelect" class="col-md-6">
+              <img src="../assets/logo.png" class="img-fluid">
+              <p>ThunderX3 Profile A</p>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li><img src="../assets/logo.png" class="img-fluid"><p>Profile B</p></li>
+                <li><img src="../assets/logo.png" class="img-fluid"><p>Profile C</p></li>
+                <li><img src="../assets/logo.png" class="img-fluid"><p>Profile D</p></li>
+                <li>+</li>
+              </ul>
+            </div>
           </div>
-          <div class="col-md-6">
-            <ul>
-              <li><img src="../assets/logo.png" class="img-thumbnail"><p>Profile B</p></li>
-              <li><img src="../assets/logo.png" class="img-thumbnail"><p>Profile C</p></li>
-              <li><img src="../assets/logo.png" class="img-thumbnail"><p>Profile D</p></li>
-              <li>+</li>
-            </ul>
-          </div>
-          <div id="deviceSelection" class="row">
+          <div id="device" class="row">
             <ul>
               <li @click="showDevice(1)"><img src="../assets/logo.png" class="img-fluid"><p>device 1</p></li>
               <li @click="showDevice(2)"><img src="../assets/logo.png" class="img-fluid"><p>device 2</p></li>
@@ -28,21 +30,24 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-1">
+        <div class="leftContralBar">
           <p>M</p>
         </div>
-        <device1Presets></device1Presets>
-        <device2Presets></device2Presets>
-        <device3Presets></device3Presets>
+        <div id="presets">
+          <device1Presets></device1Presets>
+          <device2Presets></device2Presets>
+          <device3Presets></device3Presets>
+        </div>
       </div>
     </div>
-    <div>
-      <div id="preview" class="container">
+    <div id="graphicBackground">
+      <div id="topButton"></div>
+      <div id="preview">
         <device1View></device1View>
         <device2View></device2View>
         <device3View></device3View>
       </div>
-      <div id="Setting">
+      <div id="setting">
         <device1Setting></device1Setting>
         <device2Setting></device2Setting>
         <device3Setting></device3Setting>

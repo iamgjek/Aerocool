@@ -1,12 +1,10 @@
 <template>
-  <div id="device1Presets" class="device device1 col-md-10 row">
+  <div id="device1Presets" class="device device1">
     <div id="accordion1" role="tablist">
       <div class="card" @click="showSetting(1)">
         <a data-toggle="collapse" href="#collapse1-1" aria-expanded="true" aria-controls="collapse1-1">
           <div class="card-header" role="tab" id="heading1-1">
-            <h5 class="mb-0">
-              {{msg + '1'}}
-            </h5>
+            <h5 class="mb-0">CUSTOMIZE</h5>
           </div>
         </a>
         <div id="collapse1-1" class="collapse show" role="tabpanel" aria-labelledby="heading1-1" data-parent="#accordion1">
@@ -18,9 +16,7 @@
       <div class="card" @click="showSetting(2)">
         <a class="collapsed" data-toggle="collapse" href="#collapse1-2" aria-expanded="false" aria-controls="collapse1-2">
           <div class="card-header" role="tab" id="heading1-2">
-            <h5 class="mb-0">
-              {{msg + '2'}}
-            </h5>
+            <h5 class="mb-0">LIGHTING</h5>
           </div>
         </a>
         <div id="collapse1-2" class="collapse" role="tabpanel" aria-labelledby="heading1-2" data-parent="#accordion1">
@@ -32,9 +28,7 @@
       <div class="card" @click="showSetting(3)">
         <a class="collapsed" data-toggle="collapse" href="#collapse1-3" aria-expanded="false" aria-controls="collapse1-3">
           <div class="card-header" role="tab" id="heading1-3">
-            <h5 class="mb-0">
-              {{msg + '3'}}
-            </h5>
+            <h5 class="mb-0">PERFORMANCE</h5>
           </div>
         </a>
         <div id="collapse1-3" class="collapse" role="tabpanel" aria-labelledby="heading1-3" data-parent="#accordion1">
@@ -52,7 +46,7 @@ export default {
   name: 'device1Presets',
   data () {
     return {
-      msg: 'Card 1-'
+      
     }
   },
   // props: {

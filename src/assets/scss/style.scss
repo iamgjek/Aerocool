@@ -1,52 +1,136 @@
 @import "guideline";
 
+$doc-width: 1200px;
+$doc-height: 700px;
+$main-color: #23919A;
+
 body {
-	width: 1200px;
-	font-family: "Raleway", "Raleway Light", -apple-system, BlinkMacSystemFont;
-	background-color: #23919A;
-}
-#sidebar {
-	width: 342px;
-}
-.row {
-	margin-left: 0;
-	margin-right: 0;
+	width: $doc-width;
+	height: $doc-height;
+	font-family: "Orbitron Regular", -apple-system, BlinkMacSystemFont;
+	background-color: $main-color;
 }
 ul {
 	padding-left: 0;
 	list-style: none;
 }
+p {
+	font-size: 12px;
+}
+a {
+	&:hover {
+		color: transparent;
+		text-decoration: none;
+	}
+}
 
-#menu {
-	width: 40px;
+#sidebar {
+	width: 344px;
+
+	.leftContralBar {
+		width: 40px;
+		color: #fff;
+		text-align: center;
+	}
+	#profile {
+		width: 304px;
+		height: 146px;
+		margin-top: 1px;
+		background-color: #000;
+
+		p {
+			color: #fff;
+		}
+
+		#profileSelect {
+			width:141px;
+			height:141px;
+			background-color: #2f2725;
+			border: 1px #00ffff solid;
+		}
+
+		li {
+			width:69px;
+			height:69px;
+			display: inline-block;
+			border: 1px #00ffff solid;
+
+			p {
+				min-height: 24px;
+				margin-top: -24px;
+				padding-top: 4px;
+				line-height: .6rem;
+				text-align: center;
+				background-color: #ccc;
+				opacity: .8;
+				color: #fff;
+			}
+		}
+	}
+	#device {
+		width: 304px;
+		height:99px;
+		background-color: #646464;
+
+		ul {
+			padding-left: 2px;
+
+			li {
+			width: 97px;
+			height: 97px;
+			margin: 1px 0 0 0;
+			background-color: #282828;
+			color: #aaa;
+			display: inline-block;
+
+				&:hover, &:focus {
+					background-color: #000;
+					color: #00ffff;
+				}
+			}
+		}
+	}
+	#presets {
+		width: 304px;
+
+		.card {
+			border-radius: 0;
+			border: 0;
+			
+			.card-header {
+				height: 35px;
+				background-color: $main-color;
+				color: #fff;
+				text-align: center;
+				border: none;
+				border-radius: 0;
+
+				h5 {
+					font-size: 1rem;
+				}
+			}
+			.card-body {
+				background-color: #545c64;
+				color: #fff;
+			}
+			.collapsed .card-header {
+				background-color: #32373c;
+			}
+		}
+	}
 }
-#profile {
-	background-color: #464646;
-	height: 210px
-}
-#profile .col-md-6, #profile.col-md-10, .col-md-10 {
-	padding-left: 0;
-	padding-right: 0;
-}
-#profile p {
-	font-size: .8rem;
-	text-align: center;
-	line-height: .8rem;
-	margin-bottom: 0;
-	margin-top: -16px;
-}
-#profile ul li p {
-	margin-top: -14px;	
-}
-#profile ul li {
-	display: inline-block;
-	width: 44%;
-	margin: 0 -4px 0 2px;
-}
-#deviceSelection ul li {
-	display: inline-block;
-	width: 32%;
-}
-#accordion1, #accordion2, #accordion3 {
-	width: 100%;
+
+#graphicBackground {
+	width: 856px;
+	
+	#topButton {
+		height: 38px;
+		background-color: #000;	
+	}
+	#preview {
+		height: 310px;
+	}
+	#setting {
+
+	}
 }
