@@ -1,8 +1,15 @@
 @import "guideline";
 @import "slick";
 
-$doc-width: 1200px;
-$doc-height: 700px;
+$doc-width: 1185px;
+$sidebar-width: 344px;
+$graphicBackground-width: $doc-width - $sidebar-width;
+
+$doc-height: 678px;
+$profile-height: 143px;
+$device-height: 98px;
+$presets-height: $doc-height - $profile-height - $device-height;
+
 $main-color: #23919A;
 
 body {
@@ -34,7 +41,7 @@ a {
 	font-family: "Orbitron Regular", -apple-system, BlinkMacSystemFont;
 }
 #sidebar {
-	width: 344px;
+	width: $sidebar-width;
 
 	.leftContralBar {
 		width: 40px;
@@ -43,8 +50,8 @@ a {
 	}
 	#profile {
 		width: 304px;
-		height: 146px;
-		padding: 2px 0 0 2px;
+		height: $profile-height;
+		padding: 2px 0 2px 2px;
 		background-color: #000;
 
 		p {
@@ -52,13 +59,12 @@ a {
 		}
 		#profileSelect {
 			width:100%;
-			height:141px;
 			background-color: #2f2725;
 			border: 1px #00ffff solid;
 
 			p {
 				height: 24px;
-				margin-top: -35px;
+				margin-top: -36px;
 				padding-top: 4px;
 				line-height: .8rem;
 				text-align: center;
@@ -70,11 +76,26 @@ a {
 		#profileList {
 			height: auto;
 			padding: 0 0 0 4px;
-			overflow: scroll;
-			
+			overflow-y: scroll;
+
+			// scroll-bar style
+			&::-webkit-scrollbar-track {
+				border: 1px solid black;
+				background-color: #F5F5F5;
+			}
+			&::-webkit-scrollbar {
+				width: 10px;
+				background-color: #F5F5F5;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: #000000;	
+			}
+			ul {
+				margin-bottom: 0px;
+			}
 			li {
-				width:69px;
-				height:69px;
+				width:68px;
+				height:68px;
 				display: inline-block;
 				background-color: #282828;
 				border: 1px #282828 solid;
@@ -88,7 +109,7 @@ a {
 
 				&:last-child {
 					position: relative;
-					top: -14px;
+					top: -13px;
 
 					&:nth-of-type(odd) {
 						top: 0px;
@@ -108,7 +129,6 @@ a {
 					margin-top: -24px;
 					padding-top: 4px;
 					line-height: .8rem;
-					text-align: center;
 					background-color: #ccc;
 					opacity: .8;
 					color: #000;
@@ -143,7 +163,7 @@ a {
 	}
 	#presets {
 		width: 304px;
-		height: 455px;
+		height: $presets-height;
 		background-color: #545c64;
 
 		.card {
@@ -165,7 +185,7 @@ a {
 			.card-body {
 				background-color: #545c64;
 				color: #fff;
-				height: 350px;
+				height: 332px;
 				overflow: hidden;
 			}
 			.collapsed .card-header {
@@ -176,7 +196,7 @@ a {
 }
 
 #graphicBackground {
-	width: 856px;
+	width: $graphicBackground-width;
 	
 	#topButton {
 		height: 38px;

@@ -1,0 +1,27 @@
+<template>
+  <div id="device0View" class="device device0 col-md-9">
+    <section id="device1Setting1" class="setting setting1">
+      <h1>{{ msg + ' 0-1' }}</h1>
+      <h2>Essential Links</h2>
+    </section>
+    <section id="device1Setting2" class="setting setting2 d-none">
+      <h1>{{ msg + ' 0-2' }}</h1>
+      <h2>Essential Links</h2>
+    </section>
+    <section id="device1Setting3" class="setting setting3 d-none">
+      <h1>{{ msg + ' 0-3' }}</h1>
+      <h2>Essential Links</h2>
+    </section>
+  </div>
+</template>
+
+<script>
+
+export default {
+  data () {
+    return {
+      msg: 'device0View'
+    }
+  }
+}
+</script>
