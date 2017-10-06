@@ -13,6 +13,7 @@
     "bootstrap": "^4.0.0-beta",
     "jquery": "^3.2.1",
     "popper.js": "^1.12.5",
+    "slick-carousel": "^1.8.1",
     "tether": "^1.4.0",
     "vue": "^2.1.0",
     "vue-resource": "^1.1.0"

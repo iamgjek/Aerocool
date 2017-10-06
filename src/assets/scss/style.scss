@@ -1,14 +1,12 @@
 @import "guideline";
+@import "slick";
 
 $doc-width: 1200px;
 $doc-height: 700px;
 $main-color: #23919A;
 
 body {
-	width: $doc-width;
-	height: $doc-height;
-	font-family: "Orbitron Regular", -apple-system, BlinkMacSystemFont;
-	background-color: $main-color;
+	background-color: #fff;
 }
 ul {
 	padding-left: 0;
@@ -23,7 +21,18 @@ a {
 		text-decoration: none;
 	}
 }
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+#app {
+	width: $doc-width;
+	height: $doc-height;
+	background-color: $main-color;
+	font-family: "Orbitron Regular", -apple-system, BlinkMacSystemFont;
+}
 #sidebar {
 	width: 344px;
 
@@ -35,63 +44,107 @@ a {
 	#profile {
 		width: 304px;
 		height: 146px;
-		margin-top: 1px;
+		padding: 2px 0 0 2px;
 		background-color: #000;
 
 		p {
 			color: #fff;
 		}
-
 		#profileSelect {
-			width:141px;
+			width:100%;
 			height:141px;
 			background-color: #2f2725;
 			border: 1px #00ffff solid;
-		}
-
-		li {
-			width:69px;
-			height:69px;
-			display: inline-block;
-			border: 1px #00ffff solid;
 
 			p {
-				min-height: 24px;
-				margin-top: -24px;
+				height: 24px;
+				margin-top: -35px;
 				padding-top: 4px;
-				line-height: .6rem;
+				line-height: .8rem;
 				text-align: center;
-				background-color: #ccc;
+				background-color: #000;
 				opacity: .8;
 				color: #fff;
+			}
+		}
+		#profileList {
+			height: auto;
+			padding: 0 0 0 4px;
+			overflow: scroll;
+			
+			li {
+				width:69px;
+				height:69px;
+				display: inline-block;
+				background-color: #282828;
+				border: 1px #282828 solid;
+				margin: 0 0 3px -2px;
+
+				&:hover, &:focus, &:active {
+					background-color: #2f2725;
+					border: 1px #00ffff solid;
+					cursor: pointer;
+				}
+
+				&:last-child {
+					position: relative;
+					top: -14px;
+
+					&:nth-of-type(odd) {
+						top: 0px;
+					}
+
+					h1 {
+						color: #AAAAAA;
+						font-size: 52px;
+						height: 100%;
+						line-height: 1rem;
+						margin: 0;
+					}
+				}
+
+				p {
+					height: 24px;
+					margin-top: -24px;
+					padding-top: 4px;
+					line-height: .8rem;
+					text-align: center;
+					background-color: #ccc;
+					opacity: .8;
+					color: #000;
+				}
 			}
 		}
 	}
 	#device {
 		width: 304px;
-		height:99px;
+		// height:99px;
 		background-color: #646464;
+		padding: 1px;
 
-		ul {
-			padding-left: 2px;
+		.slider {
 
-			li {
-			width: 97px;
-			height: 97px;
-			margin: 1px 0 0 0;
-			background-color: #282828;
-			color: #aaa;
-			display: inline-block;
+			.device-slick {
+				max-width: 99px;
+				max-height: 96px;
+				background-color: #282828;
+				color: #aaa;
+				cursor: pointer;
 
-				&:hover, &:focus {
-					background-color: #000;
-					color: #00ffff;
-				}
+					&:hover, &:focus, &.active {
+						background-color: #000;
+						color: #00ffff;
+					}
+					p {
+						margin-top: -30px;
+					}
 			}
 		}
 	}
 	#presets {
 		width: 304px;
+		height: 455px;
+		background-color: #545c64;
 
 		.card {
 			border-radius: 0;
@@ -112,6 +165,8 @@ a {
 			.card-body {
 				background-color: #545c64;
 				color: #fff;
+				height: 350px;
+				overflow: hidden;
 			}
 			.collapsed .card-header {
 				background-color: #32373c;
@@ -131,6 +186,6 @@ a {
 		height: 310px;
 	}
 	#setting {
-
+		height: auto;
 	}
 }

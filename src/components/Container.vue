@@ -9,23 +9,25 @@
           <div id="profile" class="row">
             <div id="profileSelect" class="col-md-6">
               <img src="../assets/logo.png" class="img-fluid">
-              <p>ThunderX3 Profile A</p>
+              <p class="flex">ThunderX3 Profile A</p>
             </div>
-            <div class="col-md-6">
+            <div id="profileList" class="col-md-6">
               <ul>
-                <li><img src="../assets/logo.png" class="img-fluid"><p>Profile B</p></li>
-                <li><img src="../assets/logo.png" class="img-fluid"><p>Profile C</p></li>
-                <li><img src="../assets/logo.png" class="img-fluid"><p>Profile D</p></li>
-                <li>+</li>
+                <li><img src="../assets/logo.png" class="img-fluid"><p class="flex">Profile B</p></li>
+                <li><img src="../assets/logo.png" class="img-fluid"><p class="flex">Profile C</p></li>
+                <li><img src="../assets/logo.png" class="img-fluid"><p class="flex">Profile D</p></li>
+                <li><h1 class="flex">+</h1></li>
               </ul>
             </div>
           </div>
-          <div id="device" class="row">
-            <ul>
-              <li @click="showDevice(1)"><img src="../assets/logo.png" class="img-fluid"><p>device 1</p></li>
-              <li @click="showDevice(2)"><img src="../assets/logo.png" class="img-fluid"><p>device 2</p></li>
-              <li @click="showDevice(3)"><img src="../assets/logo.png" class="img-fluid"><p>device 3</p></li>
-            </ul>
+          <div id="device" class="">
+            <div class="slider multiple-items">
+              <div class="device-slick active" @click="showDevice(1)"><img src="../assets/logo.png" class="img-fluid"><p class="flex">KEYBOARD</p></div>
+              <div class="device-slick" @click="showDevice(2)"><img src="../assets/logo.png" class="img-fluid"><p class="flex">MOUSE</p></div>
+              <div class="device-slick" @click="showDevice(3)"><img src="../assets/logo.png" class="img-fluid"><p class="flex">HEADSET</p></div>
+              <div class="device-slick active" @click="showDevice(1)"><img src="../assets/logo.png" class="img-fluid"><p class="flex">KEYBOARD</p></div>
+              <div class="device-slick" @click="showDevice(2)"><img src="../assets/logo.png" class="img-fluid"><p class="flex">MOUSE</p></div>
+            </div>
           </div>
         </div>
       </div>
@@ -89,6 +91,15 @@ export default {
       $('.device').addClass('d-none')
       $('.device'+num).removeClass('d-none')
     }
+  },
+  mounted: function() {
+    $('.multiple-items').slick({
+      infinite: true,
+      dots: false,
+      arrows: false,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
   }
 }
 </script>
