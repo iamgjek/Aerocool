@@ -1,5 +1,5 @@
 <template>
-  <div id="device1View" class="device device1 col-md-9">
+  <div id="device1View" class="device device1 col-md-9 d-none">
     <section id="device1Setting1" class="setting setting1">
       <h1>{{ msg + ' 1-1' }}</h1>
       <h2>Essential Links</h2>

@@ -9,6 +9,9 @@ $doc-height: 678px;
 $profile-height: 143px;
 $device-height: 98px;
 $presets-height: $doc-height - $profile-height - $device-height;
+$topButton-height: 38px;
+$preview-height: 310px;
+$setting-height: $doc-height - $topButton-height - $preview-height;
 
 $main-color: #23919A;
 
@@ -47,6 +50,30 @@ a {
 		width: 40px;
 		color: #fff;
 		text-align: center;
+		overflow: hidden;
+
+		ul {
+			margin-top: 4px;
+			li {
+				padding: 4px 0px;
+			}
+		}
+		ol {
+			padding-left: 0;
+			position: absolute;
+			left: 12px;
+			bottom: 25px;
+			li {
+				display: block;
+				padding: 6px 0;
+			}
+		}
+		li {
+			cursor: pointer;
+		}
+		.fa {
+			color: #fff;
+		}
 	}
 	#profile {
 		width: 304px;
@@ -80,15 +107,15 @@ a {
 
 			// scroll-bar style
 			&::-webkit-scrollbar-track {
-				border: 1px solid black;
-				background-color: #F5F5F5;
+				border: 1px solid #363636;
+				background-color: #363636;
 			}
 			&::-webkit-scrollbar {
 				width: 10px;
-				background-color: #F5F5F5;
+				background-color: #363636;
 			}
 			&::-webkit-scrollbar-thumb {
-				background-color: #000000;	
+				background-color: #9A9A9A;
 			}
 			ul {
 				margin-bottom: 0px;
@@ -138,7 +165,6 @@ a {
 	}
 	#device {
 		width: 304px;
-		// height:99px;
 		background-color: #646464;
 		padding: 1px;
 
@@ -199,13 +225,40 @@ a {
 	width: $graphicBackground-width;
 	
 	#topButton {
-		height: 38px;
-		background-color: #000;	
+		width: $graphicBackground-width;
+		height: $topButton-height;
+		background-color: #000;
+		position: absolute;
+		overflow: hidden;
+
+		ul li, ol li {
+			display: inline-block;
+		}
+		ol li {
+			color: #9A9A9A;
+			font-size: 1.2rem;
+			padding: 8px 10px 0 10px;
+			cursor: pointer;
+
+			&:nth-of-type(5) {
+				padding: 12px 0;
+				margin: auto 10px;
+				border-right: 1px #9A9A9A solid;
+				position: relative;
+				top: 5px;
+				cursor: default;
+			}
+		}
+		.fa-volume-control-phone {
+			transform: rotate(-33deg);
+		}
 	}
 	#preview {
-		height: 310px;
+		height: $preview-height;
+		background-color: rgba(0, 0, 0, .6);
+		padding-top: $topButton-height;
 	}
 	#setting {
-		height: auto;
+		height: $setting-height;
 	}
 }

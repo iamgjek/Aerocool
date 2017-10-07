@@ -5,6 +5,7 @@ import App from './App'
 // bootstrap
 import 'assets/scss/bootstrap/bootstrap.scss'
 import 'slick-carousel/slick/slick.scss'
+import 'assets/scss/font-awesome/font-awesome.scss'
 import 'assets/scss/style.scss'
 import 'bootstrap/dist/js/bootstrap'
 import 'slick-carousel/slick/slick'

@@ -3,7 +3,14 @@
     <div id="sidebar">
       <div class="row">
         <div class="leftContralBar">
-          <p>M</p>
+          <ul>
+            <li><i class="fa fa-search"></i></li>
+            <li><i class="fa fa-plus"></i></li>
+            <li><i class="fa fa-clone"></i></li>
+            <li><i class="fa fa-exchange"></i></li>
+            <li><i class="fa fa-pencil-square-o"></i></li>
+            <li><i class="fa fa-trash-o"></i></li>
+          </ul>
         </div>
         <div>
           <div id="profile" class="row">
@@ -31,7 +38,18 @@
       </div>
       <div class="row">
         <div class="leftContralBar">
-          <p>M</p>
+          <ul>
+            <li><i class="fa fa-search"></i></li>
+            <li><i class="fa fa-plus"></i></li>
+            <li><i class="fa fa-clone"></i></li>
+            <li><i class="fa fa-download"></i></li>
+            <li><i class="fa fa-pencil-square-o"></i></li>
+            <li><i class="fa fa-trash-o"></i></li>
+          </ul>
+          <ol>
+            <li class="fa fa-gear"></i></li>
+            <li class="fa fa-gear"></i></li>
+          </ol>
         </div>
         <div id="presets">
           <device0Presets></device0Presets>
@@ -41,7 +59,20 @@
       </div>
     </div>
     <div id="graphicBackground">
-      <div id="topButton"></div>
+      <div id="topButton" class="row">
+        <ul class="col-md-6">
+          <li><img src="../assets/images/logo.png" class="img-fluid"></li>
+        </ul>
+        <ol class="col-md-6 text-right pr-2">
+          <li><i class="fa fa-user"></i></li>
+          <li><i class="fa fa-volume-control-phone"></i></li>
+          <li><i class="fa fa-facebook"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li></li>
+          <li><i class="fa fa-minus"></i></li>
+          <li><i class="fa fa-times"></i></li>
+        </ol>
+      </div>
       <div id="preview">
         <device0View></device0View>
         <device1View></device1View>
