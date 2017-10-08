@@ -13,7 +13,16 @@ $topButton-height: 38px;
 $preview-height: 310px;
 $setting-height: $doc-height - $topButton-height - $preview-height;
 
-$main-color: #23919A;
+$theme-color: #23919A;
+$theme-color-light: #38FFFF;
+
+$tabs-color-dark: #25282C;
+$tabs-color-light: #434A51;
+
+$scroll-bar-width: 10px;
+$scroll-color-dark: #363636;
+$scroll-color-light: #9A9A9A;
+
 
 body {
 	background-color: #fff;
@@ -31,16 +40,45 @@ a {
 		text-decoration: none;
 	}
 }
-.flex {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.nav-tabs {
+	border-bottom: 1px transparent solid;
+}
+.nav-tabs .nav-link {
+	background-color: $tabs-color-dark;
+	color: #fff;
+	border: 0;
+	border-top-left-radius: 0;
+    border-top-right-radius: 0;
+	text-align: center;
+	font-size: .8rem;
+	
+	&:focus, &:hover {
+		border: none;
+	}
+	&.active {
+		background-color: $tabs-color-light;
+		color: #fff;
+	}
+}
+#profileList, .tab-content {
+	// scroll-bar style
+	&::-webkit-scrollbar-track {
+		border: none;
+		background-color: $scroll-color-dark;
+	}
+	&::-webkit-scrollbar {
+		width: $scroll-bar-width;
+		background-color: $scroll-color-dark;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: $scroll-color-light;
+	}
 }
 
 #app {
 	width: $doc-width;
 	height: $doc-height;
-	background-color: $main-color;
+	background-color: $theme-color;
 	font-family: "Orbitron Regular", -apple-system, BlinkMacSystemFont;
 }
 #sidebar {
@@ -104,19 +142,6 @@ a {
 			height: auto;
 			padding: 0 0 0 4px;
 			overflow-y: scroll;
-
-			// scroll-bar style
-			&::-webkit-scrollbar-track {
-				border: 1px solid #363636;
-				background-color: #363636;
-			}
-			&::-webkit-scrollbar {
-				width: 10px;
-				background-color: #363636;
-			}
-			&::-webkit-scrollbar-thumb {
-				background-color: #9A9A9A;
-			}
 			ul {
 				margin-bottom: 0px;
 			}
@@ -198,7 +223,7 @@ a {
 			
 			.card-header {
 				height: 35px;
-				background-color: $main-color;
+				background-color: $theme-color;
 				color: #fff;
 				text-align: center;
 				border: none;
@@ -209,13 +234,57 @@ a {
 				}
 			}
 			.card-body {
-				background-color: #545c64;
+				background-color: $tabs-color-light;
 				color: #fff;
+				padding: 0;
 				height: 332px;
 				overflow: hidden;
+				
+				.tab-content {
+					height: 298px;
+					overflow-y: scroll;
+
+					li {
+						height: 35px;
+						font-size: 12px;
+						color: #939494;
+						border: 1px transparent solid;
+						cursor: pointer;
+
+						&:hover, &:focus, &.active {
+							border: 1px $theme-color-light solid;
+						}
+						.btn-group {
+							width: 82px;
+						}
+						.btn {
+							max-width: 50px;
+							height: 25px;
+							padding: 2px 2px 0 2px;
+							margin: auto 2px;
+							font-size: 12px;
+							line-height: 12px;
+							word-break: break-word;
+							white-space: normal;
+							border-radius: 3px;
+
+							&:hover {
+								background-color: transparent;
+								color: $theme-color-light;
+								border: 1px $theme-color-light solid;
+							}
+						}
+						i {
+							font-size: 1.2rem;
+							width: 30px;
+							text-align: center;
+							color: #fff;
+						}
+					}
+				}
 			}
 			.collapsed .card-header {
-				background-color: #32373c;
+				background-color: $tabs-color-dark;
 			}
 		}
 	}

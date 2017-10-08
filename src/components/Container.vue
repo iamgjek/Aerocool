@@ -16,21 +16,21 @@
           <div id="profile" class="row">
             <div id="profileSelect" class="col-md-6">
               <img src="../assets/images/logo.png" class="img-fluid">
-              <p class="flex">ThunderX3 Profile A</p>
+              <p class="d-flex justify-content-center align-items-center">ThunderX3 Profile A</p>
             </div>
             <div id="profileList" class="col-md-6">
               <ul>
-                <li><img src="../assets/images/logo.png" class="img-fluid"><p class="flex">Profile B</p></li>
-                <li><img src="../assets/images/logo.png" class="img-fluid"><p class="flex">Profile C</p></li>
-                <li><img src="../assets/images/logo.png" class="img-fluid"><p class="flex">Profile D</p></li>
-                <li><h1 class="flex">+</h1></li>
+                <li><img src="../assets/images/logo.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center">Profile B</p></li>
+                <li><img src="../assets/images/logo.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center">Profile C</p></li>
+                <li><img src="../assets/images/logo.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center">Profile D</p></li>
+                <li><h1 class="d-flex justify-content-center align-items-center">+</h1></li>
               </ul>
             </div>
           </div>
           <div id="device" class="">
             <div class="slider multiple-items">
-              <div class="device-slick" :class="{'active': list.active}":key="list.id" v-for="list in lists" @click="showDevice(list.id)">
-                <img :src="list.images" class="img-fluid"><p class="flex">{{list.label}}</p>
+              <div class="device-slick" :class="{'active': list.active}" v-for="(list, index) in lists" :key="list.id" @click="showDevice(list.id)">
+                <img :src="list.images" class="img-fluid"><p class="d-flex justify-content-center align-items-center">{{list.label}}</p>
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@
     <div id="graphicBackground">
       <div id="topButton" class="row">
         <ul class="col-md-6">
-          <li><img src="../assets/images/logo.png" class="img-fluid"></li>
+          <li><img src="../assets/images/logo.png" alt="" class="img-fluid"></li>
         </ul>
         <ol class="col-md-6 text-right pr-2">
           <li><i class="fa fa-user"></i></li>
