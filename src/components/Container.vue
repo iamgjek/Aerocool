@@ -4,53 +4,39 @@
       <div class="row">
         <div class="leftContralBar">
           <ul>
-            <li><i class="fa fa-search"></i></li>
-            <li><i class="fa fa-plus"></i></li>
-            <li><i class="fa fa-clone"></i></li>
-            <li><i class="fa fa-exchange"></i></li>
-            <li><i class="fa fa-pencil-square-o"></i></li>
-            <li><i class="fa fa-trash-o"></i></li>
+            <li><i class="icon icon-search"></i></li>
+            <li><i class="icon icon-add"></i></li>
+            <li><i class="icon icon-copy"></i></li>
+            <li><i class="icon icon-IE"></i></li>
+            <li><i class="icon icon-edit"></i></li>
+            <li><i class="icon icon-delete"></i></li>
           </ul>
         </div>
         <div>
           <div id="profile" class="row">
             <div id="profileSelect" class="col-md-6">
-              <img src="../assets/images/logo.png" class="img-fluid">
+              <img src="../assets/images/profile-image.png" class="img-fluid">
               <p class="d-flex justify-content-center align-items-center">ThunderX3 Profile A</p>
             </div>
             <div id="profileList" class="col-md-6">
               <ul>
-                <li><img src="../assets/images/logo.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center">Profile B</p></li>
-                <li><img src="../assets/images/logo.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center">Profile C</p></li>
-                <li><img src="../assets/images/logo.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center">Profile D</p></li>
+                <li><img src="../assets/images/profile-image.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center">Profile B</p></li>
+                <li><img src="../assets/images/profile-image.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center">Profile C</p></li>
+                <li><img src="../assets/images/profile-image.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center">Profile D</p></li>
                 <li><h1 class="d-flex justify-content-center align-items-center">+</h1></li>
               </ul>
             </div>
           </div>
-          <div id="device" class="">
+          <div id="device" class="row">
             <div class="slider multiple-items">
               <div class="device-slick" :class="{'active': list.active}" v-for="(list, index) in lists" :key="list.id" @click="showDevice(list.id)">
-                <img :src="list.images" class="img-fluid"><p class="d-flex justify-content-center align-items-center">{{list.label}}</p>
+                <p class="d-flex justify-content-center align-items-center icon" :class="list.label">{{list.label}}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="leftContralBar">
-          <ul>
-            <li><i class="fa fa-search"></i></li>
-            <li><i class="fa fa-plus"></i></li>
-            <li><i class="fa fa-clone"></i></li>
-            <li><i class="fa fa-download"></i></li>
-            <li><i class="fa fa-pencil-square-o"></i></li>
-            <li><i class="fa fa-trash-o"></i></li>
-          </ul>
-          <ol>
-            <li class="fa fa-gear"></i></li>
-            <li class="fa fa-gear"></i></li>
-          </ol>
-        </div>
         <div id="presets">
           <device0Presets></device0Presets>
           <device1Presets></device1Presets>
@@ -61,16 +47,16 @@
     <div id="graphicBackground">
       <div id="topButton" class="row">
         <ul class="col-md-6">
-          <li><img src="../assets/images/logo.png" alt="" class="img-fluid"></li>
+          <li><a :href="officialWebsite" target="_blank" class="official"></a></li>
         </ul>
         <ol class="col-md-6 text-right pr-2">
-          <li><i class="fa fa-user"></i></li>
-          <li><i class="fa fa-volume-control-phone"></i></li>
-          <li><i class="fa fa-facebook"></i></li>
-          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="icon icon-login"></i></li>
+          <li><i class="icon icon-call"></i></li>
+          <li><i class="icon icon-facebook"></i></li>
+          <li><i class="icon icon-twitter"></i></li>
           <li></li>
-          <li><i class="fa fa-minus"></i></li>
-          <li><i class="fa fa-times"></i></li>
+          <li><i class="icon icon-minimize"></i></li>
+          <li><i class="icon icon-close"></i></li>
         </ol>
       </div>
       <div id="preview">
@@ -117,10 +103,11 @@ export default {
   data() {
     return {
       activeIndex: 0,
+      officialWebsite: 'http://google.com',
       lists: [
-        { id: '0', label: 'KEYBOARD', active: true, images: 'static/images/logo.png' },
-        { id: '1', label: 'MOUSE', active: false, images: 'static/images/logo.png' },
-        { id: '2', label: 'HEADSET', active: false, images: 'static/images/logo.png' }
+        { id: '0', label: 'KEYBOARD', active: true },
+        { id: '1', label: 'MOUSE', active: false },
+        { id: '2', label: 'HEADSET', active: false }
       ]
     }
   },
