@@ -35,21 +35,21 @@
               <div class="tab-pane active" id="action-1" role="tabpanel">
                 <ul>
                   <li class="d-flex justify-content-start align-items-center" v-for="(list, index) in lists[0].action" :key="index" :class="{'active': list.active}" @click="selectListAction(index, '0')">
-                    <div class="btn-group">
+                    <div class="btn-group font-size-xs">
                       <button class="btn btn-outline-theme" v-if="list.shortcut1 != ''">{{list.shortcut1}}</button>
                       <button class="btn btn-outline-theme" v-if="list.shortcut2 != ''">{{list.shortcut2}}</button>
                     </div>
-                    <i class="fa" :class="list.ico"></i>{{list.name}}</li>
+                    <i class="fa" :class="list.ico"></i><span class="font-size-sm">{{list.name}}</span></li>
                 </ul>
               </div>
               <div class="tab-pane" id="library-1" role="tabpanel">
                 <ul>
                   <li class="d-flex justify-content-start align-items-center" v-for="(list, index) in lists[0].library" :key="index" :class="{'active': list.active}" @click="selectListLibrary(index, '0')">
-                    <div class="btn-group">
+                    <div class="btn-group font-size-xs">
                       <button class="btn btn-outline-theme" v-if="list.shortcut1 != ''">{{list.shortcut1}}</button>
                       <button class="btn btn-outline-theme" v-if="list.shortcut2 != ''">{{list.shortcut2}}</button>
                     </div>
-                    <i class="fa" :class="list.ico"></i>{{list.name}}</li>
+                    <i class="fa" :class="list.ico"></i><span class="font-size-sm">{{list.name}}</span></li>
                 </ul>
               </div>
             </div>
@@ -76,21 +76,21 @@
               <div class="tab-pane active" id="action-2" role="tabpanel">
                 <ul>
                   <li class="d-flex justify-content-start align-items-center" v-for="(list, index) in lists[1].action" :key="index" :class="{'active': list.active}" @click="selectListAction(index, '1')">
-                    <div class="btn-group">
+                    <div class="btn-group font-size-xs">
                       <button class="btn btn-outline-theme" v-if="list.shortcut1 != ''">{{list.shortcut1}}</button>
                       <button class="btn btn-outline-theme" v-if="list.shortcut2 != ''">{{list.shortcut2}}</button>
                     </div>
-                    <i class="fa" :class="list.ico"></i>{{list.name}}</li>
+                    <i class="fa" :class="list.ico"></i><span class="font-size-sm">{{list.name}}</span></li>
                 </ul>
               </div>
               <div class="tab-pane" id="library-2" role="tabpanel">
                 <ul>
                   <li class="d-flex justify-content-start align-items-center" v-for="(list, index) in lists[1].library" :key="index" :class="{'active': list.active}" @click="selectListLibrary(index, '1')">
-                    <div class="btn-group">
+                    <div class="btn-group font-size-xs">
                       <button class="btn btn-outline-theme" v-if="list.shortcut1 != ''">{{list.shortcut1}}</button>
                       <button class="btn btn-outline-theme" v-if="list.shortcut2 != ''">{{list.shortcut2}}</button>
                     </div>
-                    <i class="fa" :class="list.ico"></i>{{list.name}}</li>
+                    <i class="fa" :class="list.ico"></i><span class="font-size-sm">{{list.name}}</span></li>
                 </ul>
               </div>
             </div>
@@ -105,7 +105,7 @@
         </a>
         <div id="collapse1-3" class="collapse" role="tabpanel" aria-labelledby="heading1-3" data-parent="#accordion">
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <span class="font-size-sm">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</span>
           </div>
         </div>
       </div>

@@ -20,9 +20,9 @@
             </div>
             <div id="profileList" class="col-md-6">
               <ul>
-                <li><img src="../assets/images/profile-image.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center">Profile B</p></li>
-                <li><img src="../assets/images/profile-image.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center">Profile C</p></li>
-                <li><img src="../assets/images/profile-image.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center">Profile D</p></li>
+                <li><img src="../assets/images/profile-image.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center"><span class="font-size-xs text-center">ThunderX3 Profile B</span></p></li>
+                <li><img src="../assets/images/profile-image.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center"><span class="font-size-xs text-center">ThunderX3 Profile C</span></p></li>
+                <li><img src="../assets/images/profile-image.png" class="img-fluid"><p class="d-flex justify-content-center align-items-center"><span class="font-size-xs text-center">Profile D</span></p></li>
                 <li><h1 class="d-flex justify-content-center align-items-center">+</h1></li>
               </ul>
             </div>
