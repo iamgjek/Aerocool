@@ -1,0 +1,7 @@
+@import "variables";
+
+#preview {
+    height: $preview-height;
+    // background-color: rgba(0, 0, 0, .6);
+    padding-top: $topButton-height;
+}
