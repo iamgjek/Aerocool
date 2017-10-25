@@ -15,7 +15,7 @@
         <div>
           <div id="profile" class="row">
             <div id="profileSelect" class="col-md-6">
-              <img src="../assets/images/profile-image.png" class="img-fluid">
+              <img src="../assets/images/ThunderX3_Loading-1.gif" class="img-fluid">
               <p class="d-flex justify-content-center align-items-center">ThunderX3 Profile A</p>
             </div>
             <div id="profileList" class="col-md-6">
