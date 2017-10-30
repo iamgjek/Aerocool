@@ -4,4 +4,16 @@
     height: $preview-height;
     // background-color: rgba(0, 0, 0, .6);
     padding-top: $topButton-height;
+
+    .setting {
+        margin: 20px auto 0 auto;
+
+        img {
+            width: 806px;
+            height: 248px;
+            overflow: hidden;
+            background: url('../images/keyboard.png') no-repeat;
+            -webkit-mask-image: url('../images/keyboard_block.png');
+        }
+    }
 }
