@@ -1,17 +1,20 @@
 # vue-electron
 
-> A Vue.js project packaged with electron, built for scotch.io
+> A Vue.js project packaged with electron
 
 ## Build Setup
 
-``` bash
-# install dependencies
-npm install
-
-# install electron globally
-sudo npm install -g electron
-
-# run the application
-election .
+#### install dependencies
+```bash
+$ npm install
 ```
 
+#### install electron globally
+```bash
+$ sudo npm install -g electron
+```
+
+#### run the application
+```bash
+$ election .
+```
