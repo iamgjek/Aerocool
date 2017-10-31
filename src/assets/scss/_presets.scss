@@ -1,4 +1,5 @@
 @import "variables";
+@import "toggle";
 
 #presets {
     width: $sidebar-width;
@@ -46,22 +47,22 @@
                     }
                     .btn-group {
                         width: 82px;
-                    }
-                    .btn {
-                        max-width: 50px;
-                        height: 28px;
-                        padding: 2px 5px 0 5px;
-                        margin: auto 3px;
-                        font-size: 12px;
-                        line-height: 12px;
-                        letter-spacing: 1px;
-                        white-space: normal;
-                        border-radius: 3px;
+                        .btn {
+                            max-width: 50px;
+                            height: 28px;
+                            padding: 2px 5px 0 5px;
+                            margin: auto 3px;
+                            font-size: 12px;
+                            line-height: 12px;
+                            letter-spacing: 1px;
+                            white-space: normal;
+                            border-radius: 3px;
 
-                        &:hover {
-                            background-color: transparent;
-                            color: $theme-color-light;
-                            border: 1px $theme-color-light solid;
+                            &:hover {
+                                background-color: transparent;
+                                color: $theme-color-light;
+                                border: 1px $theme-color-light solid;
+                            }
                         }
                     }
                     i {

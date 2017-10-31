@@ -76,6 +76,7 @@
               <div class="tab-pane active" id="action-2" role="tabpanel">
                 <ul>
                   <li class="d-flex justify-content-start align-items-center" v-for="(list, index) in lists[1].action" :key="index" :class="{'active': list.active}" @click="selectListAction(index, '1')">
+                    <input type="checkbox" name="toggle" class="sw" id="toggle-1"><label for="toggle-1"></label>
                     <div class="btn-group font-size-xs">
                       <button class="btn btn-outline-theme" v-if="list.shortcut1 != ''">{{list.shortcut1}}</button>
                       <button class="btn btn-outline-theme" v-if="list.shortcut2 != ''">{{list.shortcut2}}</button>

@@ -9,6 +9,7 @@ import 'assets/scss/font-awesome/font-awesome.scss'
 import 'assets/scss/style.scss'
 import 'bootstrap/dist/js/bootstrap'
 import 'slick-carousel/slick/slick'
+
 //require the vu resource library
 var VueResource = require('vue-resource');
 //tell vue to use vue resource
