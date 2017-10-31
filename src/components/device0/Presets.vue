@@ -115,69 +115,111 @@
 
 <script>
 export default {
-  name: 'device0Presets',
+  name: "device0Presets",
   data() {
     return {
       lists: [
-        { id: '0', label: 'CUSTOMIZE', 
+        {
+          id: "0",
+          label: "CUSTOMIZE",
           leftContralBar: [
-            { name: 'search' },
-            { name: 'add' },
-            { name: 'copy' },
-            { name: 'save' },
-            { name: 'edit' },
-            { name: 'delete' },
+            { name: "search" },
+            { name: "add" },
+            { name: "copy" },
+            { name: "save" },
+            { name: "edit" },
+            { name: "delete" }
           ],
           action: [
-            { name: 'Macro', ico: 'fa-bars', shortcut1: 'Fn', shortcut2: 'Left Shift', active: false },
-            { name: 'Text', ico: 'fa-bars', shortcut1: 'Fn', shortcut2: '', active: false },
-            { name: 'Keyboard Function', ico: 'fa-thunder', shortcut1: 'Fn', shortcut2: 'Left Shift', active: false }
-          ], 
+            {
+              name: "Macro",
+              ico: "fa-bars",
+              shortcut1: "Fn",
+              shortcut2: "Left Shift",
+              active: false
+            },
+            {
+              name: "Text",
+              ico: "fa-bars",
+              shortcut1: "Fn",
+              shortcut2: "",
+              active: false
+            },
+            {
+              name: "Keyboard Function",
+              ico: "fa-thunder",
+              shortcut1: "Fn",
+              shortcut2: "Left Shift",
+              active: false
+            }
+          ],
           library: [
-            { name: 'library', ico: 'fa-gear', shortcut1: 'Fn', shortcut2: 'right Shift', active: false },
-            { name: '?', ico: '', shortcut1: '', shortcut2: '', active: false }
+            {
+              name: "library",
+              ico: "fa-gear",
+              shortcut1: "Fn",
+              shortcut2: "right Shift",
+              active: false
+            },
+            { name: "?", ico: "", shortcut1: "", shortcut2: "", active: false }
           ]
         },
-        { id: '1', label: 'LIGHTING', 
+        {
+          id: "1",
+          label: "LIGHTING",
           action: [
-            { name: 'action', ico: 'fa-bars', shortcut1: 'Fn', shortcut2: '', active: false },
-            { name: '?', ico: '', shortcut1: '', shortcut2: '', active: false }
-          ], 
+            {
+              name: "action",
+              ico: "fa-bars",
+              shortcut1: "Fn",
+              shortcut2: "",
+              active: false
+            },
+            { name: "?", ico: "", shortcut1: "", shortcut2: "", active: false }
+          ],
           library: [
-            { name: 'library', ico: 'fa-bars', shortcut1: 'Fn', shortcut2: '', active: false }
-          ] 
+            {
+              name: "library",
+              ico: "fa-bars",
+              shortcut1: "Fn",
+              shortcut2: "",
+              active: false
+            }
+          ]
         },
-        { id: '2', label: 'PERFORMANCE', 
+        {
+          id: "2",
+          label: "PERFORMANCE",
           action: [
-            { name: '?', ico: '', shortcut1: '', shortcut2: '', active: false }
-          ], 
+            { name: "?", ico: "", shortcut1: "", shortcut2: "", active: false }
+          ],
           library: [
-            { name: '?', ico: '', shortcut1: '', shortcut2: '', active: false }
+            { name: "?", ico: "", shortcut1: "", shortcut2: "", active: false }
           ]
         }
       ]
-    }
+    };
   },
   methods: {
     showSetting(index) {
       // console.log(index)
-      $('.setting').addClass('d-none')
-      $('.setting'+index).removeClass('d-none')
+      $(".setting").addClass("d-none");
+      $(".setting" + index).removeClass("d-none");
     },
     selectListAction(index, value) {
-      let lists1 = this.lists[value].action
-      lists1.forEach(function(val, key){
-        val.active = false
-      })
-      this.lists[value].action[index].active = true
+      let lists1 = this.lists[value].action;
+      lists1.forEach(function(val, key) {
+        val.active = false;
+      });
+      this.lists[value].action[index].active = true;
     },
     selectListLibrary(index, value) {
-      let lists2 = this.lists[value].library
-      lists2.forEach(function(val, key){
-        val.active = false
-      })
-      this.lists[value].library[index].active = true
+      let lists2 = this.lists[value].library;
+      lists2.forEach(function(val, key) {
+        val.active = false;
+      });
+      this.lists[value].library[index].active = true;
     }
   }
-}
+};
 </script>

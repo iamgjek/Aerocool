@@ -7,46 +7,52 @@
 @import "preview";
 @import "setting";
 @import "leftcontralBar";
-
 body {
-	background-color: #fff;
+  background-color: #fff;
 }
+
 ul {
-	padding-left: 0;
-	list-style: none;
+  padding-left: 0;
+  list-style: none;
 }
+
 p {
-	font-size: 12px;
+  font-size: 12px;
 }
+
 a {
-	&:hover {
-		color: transparent;
-		text-decoration: none;
-	}
+  &:hover {
+    color: transparent;
+    text-decoration: none;
+  }
 }
-.font-size-sm, .font-size-xs {
-	letter-spacing: 1px;
-}
-.font-size-sm {
-	transform : scale(0.9);
-}
+
+.font-size-sm,
 .font-size-xs {
-	transform : scale(0.75);
+  letter-spacing: 1px;
+}
+
+.font-size-sm {
+  transform: scale(0.9);
+}
+
+.font-size-xs {
+  transform: scale(0.75);
 }
 
 // this layout
 #app {
-	width: $doc-width;
-	height: $doc-height;
-	background-color: $theme-color;
-	font-family: "Orbitron Regular", -apple-system, BlinkMacSystemFont;
+  width: $doc-width;
+  height: $doc-height;
+  background-color: $theme-color;
+  font-family: "Orbitron Regular", -apple-system, BlinkMacSystemFont;
 }
 
 #sidebar {
-	width: $sidebar-width;
+  width: $sidebar-width;
 }
 
 #graphicBackground {
-	width: $graphicBackground-width;
-	background: url('../images/keyimage.jpg') no-repeat;
+  width: $graphicBackground-width;
+  background: url('../images/keyimage.jpg') no-repeat;
 }

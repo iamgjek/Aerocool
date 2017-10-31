@@ -1,31 +1,28 @@
 @import "variables";
-
 #preview {
-    height: $preview-height;
-    // background-color: rgba(0, 0, 0, .6);
-    padding-top: $topButton-height;
-
-    .setting {
-        margin: 20px auto 0 auto;
-
-        img {
-            width: 806px;
-            height: 248px;
-        }
-        .mask-block, .mask-frame {
-            position: absolute;
-            top: 58px;
-            width: 806px;
-            height: 248px;
-            background: linear-gradient(90deg, #f39800, #efee01, #71be43, #0096e9, #132a87);
-        }
-        .mask-block {
-            -webkit-mask-image: url('../images/keyboard_block.png'), linear-gradient(rgba(0, 0, 0, 0), transparent);
-            opacity: .4;
-        }
-        .mask-frame {
-            -webkit-mask-image: url('../images/keyboard_frame.png'), linear-gradient(rgba(0, 0, 0, 0), transparent);
-            opacity: 1;
-        }
+  height: $preview-height; // background-color: rgba(0, 0, 0, .6);
+  padding-top: $topButton-height;
+  .setting {
+    margin: 20px auto 0 auto;
+    img {
+      width: 806px;
+      height: 248px;
     }
+    .mask-block,
+    .mask-frame {
+      position: absolute;
+      top: 58px;
+      width: 806px;
+      height: 248px;
+      background: linear-gradient(90deg, #f39800, #efee01, #71be43, #0096e9, #132a87);
+    }
+    .mask-block {
+      -webkit-mask-image: url('../images/keyboard_block.png'), linear-gradient(rgba(0, 0, 0, 0), transparent);
+      opacity: .4;
+    }
+    .mask-frame {
+      -webkit-mask-image: url('../images/keyboard_frame.png'), linear-gradient(rgba(0, 0, 0, 0), transparent);
+      opacity: 1;
+    }
+  }
 }

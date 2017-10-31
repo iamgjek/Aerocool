@@ -74,21 +74,21 @@
 </template>
 
 <script>
-import device0Presets from './device0/Presets'
-import device1Presets from './device1/Presets'
-import device2Presets from './device2/Presets'
-import device0View from './device0/View'
-import device1View from './device1/View'
-import device2View from './device2/View'
-import device0Setting from './device0/Setting'
-import device1Setting from './device1/Setting'
-import device2Setting from './device2/Setting'
+import device0Presets from "./device0/Presets";
+import device1Presets from "./device1/Presets";
+import device2Presets from "./device2/Presets";
+import device0View from "./device0/View";
+import device1View from "./device1/View";
+import device2View from "./device2/View";
+import device0Setting from "./device0/Setting";
+import device1Setting from "./device1/Setting";
+import device2Setting from "./device2/Setting";
 // import device3Presets from './device3/Presets'
 // import device3View from './device3/View'
 // import device3Setting from './device3/Setting'
 
 export default {
-  name: 'container',
+  name: "container",
   components: {
     device0Presets,
     device1Presets,
@@ -103,27 +103,27 @@ export default {
   data() {
     return {
       activeIndex: 0,
-      officialWebsite: 'http://google.com',
+      officialWebsite: "http://google.com",
       lists: [
-        { id: '0', label: 'KEYBOARD', active: true },
-        { id: '1', label: 'MOUSE', active: false },
-        { id: '2', label: 'HEADSET', active: false }
+        { id: "0", label: "KEYBOARD", active: true },
+        { id: "1", label: "MOUSE", active: false },
+        { id: "2", label: "HEADSET", active: false }
       ]
-    }
+    };
   },
   methods: {
     showDevice(index) {
-      this.lists.forEach(function(val, key){
-        val.active = false
-      })
-      this.lists[index].active = true
-      this.activeIndex = index
-      $('.device').addClass('d-none')
-      $('.device'+index).removeClass('d-none')
+      this.lists.forEach(function(val, key) {
+        val.active = false;
+      });
+      this.lists[index].active = true;
+      this.activeIndex = index;
+      $(".device").addClass("d-none");
+      $(".device" + index).removeClass("d-none");
     }
   },
   mounted: function() {
-    $('.multiple-items').slick({
+    $(".multiple-items").slick({
       infinite: true,
       dots: false,
       arrows: false,
@@ -131,5 +131,5 @@ export default {
       slidesToScroll: 1
     });
   }
-}
+};
 </script>

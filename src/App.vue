@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import container from './components/Container'
+import container from "./components/Container";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     container
   }
-}
+};
 </script>

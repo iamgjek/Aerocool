@@ -16,12 +16,11 @@
 </template>
 
 <script>
-
 export default {
-  data () {
+  data() {
     return {
-      msg: 'device0Setting'
-    }
+      msg: "device0Setting"
+    };
   }
-}
+};
 </script>

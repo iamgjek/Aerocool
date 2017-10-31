@@ -15,12 +15,11 @@
 </template>
 
 <script>
-
 export default {
-  data () {
+  data() {
     return {
-      msg: 'Keyboard'
-    }
+      msg: "Keyboard"
+    };
   }
-}
+};
 </script>

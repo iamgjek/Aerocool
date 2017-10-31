@@ -13,13 +13,12 @@ $ npm install
 ```bash
 $ sudo npm install -g electron
 ```
-##### or
-```bash
-$ npm install electron
-$ ./node_modules/electron/dist/Electron.app/Contents/MacOS/Electron .
-```
 
 #### run the application
 ```bash
 $ election .
+```
+or
+```bash
+$ ./node_modules/electron/dist/Electron.app/Contents/MacOS/Electron .
 ```
