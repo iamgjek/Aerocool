@@ -1,0 +1,35 @@
+@import "variables";
+.animation-repeat-0 {
+  animation-iteration-count: infinite;
+}
+
+.animation {
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+.anim-linear {
+  animation-name: anim-linear;
+}
+
+.anim-fadein {
+  animation-name: anim-fadein;
+}
+
+@keyframes anim-linear {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: $object-width;
+  }
+}
+
+@keyframes anim-fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .4;
+  }
+}
