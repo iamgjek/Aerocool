@@ -5,8 +5,8 @@
       <h2>Essential Links</h2>
     </section>
     <section id="device0Setting2" class="setting setting1 d-none">
-      <h1>{{ msg + ' 0-2' }}</h1>
-      <h2>Essential Links</h2>
+      <button class="bnt btn-primary" id="anim-linear">linear</button>
+      <button class="bnt btn-primary" id="anim-fadein">fadein</button>
     </section>
     <section id="device0Setting3" class="setting setting2 d-none">
       <h1>{{ msg + ' 0-3' }}</h1>
@@ -21,6 +21,16 @@ export default {
     return {
       msg: "device0Setting"
     };
+  },
+  mounted: function() {
+    $("#anim-linear").click(function() {
+      $("#device0View .mask-block").removeClass("anim-fadein");
+      $("#device0View .mask-block").addClass("animation anim-linear");
+    });
+    $("#anim-fadein").click(function() {
+      $("#device0View .mask-block").removeClass("anim-linear");
+      $("#device0View .mask-block").addClass("animation anim-fadein");
+    });
   }
 };
 </script>

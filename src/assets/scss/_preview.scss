@@ -5,16 +5,17 @@
   .setting {
     margin: 20px auto 0 auto;
     img {
-      width: 806px;
+      width: $object-width;
       height: 248px;
     }
     .mask-block,
     .mask-frame {
       position: absolute;
       top: 58px;
-      width: 806px;
+      width: $object-width;
       height: 248px;
       background: linear-gradient(90deg, #f39800, #efee01, #71be43, #0096e9, #132a87);
+      overflow-x: hidden;
     }
     .mask-block {
       -webkit-mask-image: url('../images/keyboard_block.png'), linear-gradient(rgba(0, 0, 0, 0), transparent);
