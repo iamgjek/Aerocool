@@ -14,15 +14,24 @@
       top: 58px;
       width: $object-width;
       height: 248px;
-      background: linear-gradient(90deg, #f39800, #efee01, #71be43, #0096e9, #132a87);
+      background: linear-gradient(
+        90deg,
+        #f39800,
+        #efee01,
+        #71be43,
+        #0096e9,
+        #132a87
+      );
       overflow-x: hidden;
     }
     .mask-block {
-      -webkit-mask-image: url('../images/keyboard_block.png'), linear-gradient(rgba(0, 0, 0, 0), transparent);
-      opacity: .4;
+      -webkit-mask-image: url("../images/keyboard_block.png"),
+        linear-gradient(rgba(0, 0, 0, 0), transparent);
+      opacity: 0.4;
     }
     .mask-frame {
-      -webkit-mask-image: url('../images/keyboard_frame.png'), linear-gradient(rgba(0, 0, 0, 0), transparent);
+      -webkit-mask-image: url("../images/keyboard_frame.png"),
+        linear-gradient(rgba(0, 0, 0, 0), transparent);
       opacity: 1;
     }
   }

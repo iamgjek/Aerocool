@@ -29,37 +29,37 @@
 }
 
 .KEYBOARD {
-  background: url('../images/keyboard-icon.png') no-repeat;
+  background: url("../images/keyboard-icon.png") no-repeat;
   &:hover,
   &:active {
-    background: url('../images/keyboard-icon-active.png') no-repeat;
+    background: url("../images/keyboard-icon-active.png") no-repeat;
   }
 }
 
 .MOUSE {
-  background: url('../images/mouse-icon.png') no-repeat;
+  background: url("../images/mouse-icon.png") no-repeat;
   &:hover,
   &:active {
-    background: url('../images/mouse-icon-active.png') no-repeat;
+    background: url("../images/mouse-icon-active.png") no-repeat;
   }
 }
 
 .HEADSET {
-  background: url('../images/headset-icon.png') no-repeat;
+  background: url("../images/headset-icon.png") no-repeat;
   &:hover,
   &:active {
-    background: url('../images/headset-icon-active.png') no-repeat;
+    background: url("../images/headset-icon-active.png") no-repeat;
   }
 }
 
 .active {
   .KEYBOARD {
-    background: url('../images/keyboard-icon-active.png') no-repeat;
+    background: url("../images/keyboard-icon-active.png") no-repeat;
   }
   .MOUSE {
-    background: url('../images/mouse-icon-active.png') no-repeat;
+    background: url("../images/mouse-icon-active.png") no-repeat;
   }
   .HEADSET {
-    background: url('../images/headset-icon-active.png') no-repeat;
+    background: url("../images/headset-icon-active.png") no-repeat;
   }
 }

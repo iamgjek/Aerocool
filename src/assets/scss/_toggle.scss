@@ -5,15 +5,15 @@ input {
     opacity: 0;
     position: absolute;
     left: -9999px;
-    &+label {
+    & + label {
       user-select: none;
-      transition: .2s ease;
+      transition: 0.2s ease;
       display: inline-block;
       height: $sw-height;
       width: $sw-width;
       position: relative;
       margin: 0 0 0 10px;
-      background: #31353A;
+      background: #31353a;
       border-radius: 60px;
       &:before {
         content: "";
@@ -25,7 +25,7 @@ input {
         left: 0;
         border-radius: $sw-height/2;
         background: rgba(76, 217, 100, 0);
-        transition: .2s cubic-bezier(.24, 0, .5, 1);
+        transition: 0.2s cubic-bezier(0.24, 0, 0.5, 1);
       }
       /* White toggle */
       &:after {
@@ -38,9 +38,11 @@ input {
         margin-top: -8px;
         left: 4px;
         border-radius: 60px;
-        background: #545C64;
-        box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 0px 0 hsla(0, 0%, 0%, .04), 0 4px 9px hsla(0, 0%, 0%, .13), 0 3px 3px hsla(0, 0%, 0%, .05);
-        transition: .35s cubic-bezier(.54, 1.60, .5, 1);
+        background: #545c64;
+        box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1),
+          0 4px 0px 0 hsla(0, 0%, 0%, 0.04), 0 4px 9px hsla(0, 0%, 0%, 0.13),
+          0 3px 3px hsla(0, 0%, 0%, 0.05);
+        transition: 0.35s cubic-bezier(0.54, 1.6, 0.5, 1);
       }
       span {
         white-space: nowrap;
@@ -51,17 +53,17 @@ input {
       }
     }
     &:checked {
-      &+label:before {
+      & + label:before {
         width: $sw-width;
-        transition: width .2s cubic-bezier(0, 0, 0, .1) !important;
+        transition: width 0.2s cubic-bezier(0, 0, 0, 0.1) !important;
       }
-      &+label:after {
+      & + label:after {
         left: $sw-width - $sw-height + 4;
         background: #fff;
       }
-      &+label {
-        background: #31353A;
-        transition: box-shadow 2.5s cubic-bezier(0, 1.2, .94, .95)
+      & + label {
+        background: #31353a;
+        transition: box-shadow 2.5s cubic-bezier(0, 1.2, 0.94, 0.95);
       }
     }
   }

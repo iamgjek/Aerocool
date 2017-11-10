@@ -13,21 +13,21 @@
     width: 200px;
     height: 38px;
     display: block;
-    background: url('../images/logo-official.png') no-repeat;
+    background: url("../images/logo-official.png") no-repeat;
     &:hover,
     &:active {
-      background: url('../images/logo-official-active.png') no-repeat;
+      background: url("../images/logo-official-active.png") no-repeat;
     }
   }
   ol li {
-    color: #9A9A9A;
+    color: #9a9a9a;
     font-size: 1.2rem;
     padding: 2px 5px 0 5px;
     cursor: pointer;
     &:nth-of-type(5) {
       padding: 12px 0;
       margin: auto 10px;
-      border-right: 1px #9A9A9A solid;
+      border-right: 1px #9a9a9a solid;
       position: relative;
       cursor: default;
     }
@@ -37,45 +37,45 @@
       display: inline-block;
     }
     .icon-login {
-      background: url('../images/icon-login.png') no-repeat;
+      background: url("../images/icon-login.png") no-repeat;
       &:hover,
       &:active {
-        background: url('../images/icon-login-active.png') no-repeat;
+        background: url("../images/icon-login-active.png") no-repeat;
       }
     }
     .icon-call {
-      background: url('../images/icon-call.png') no-repeat;
+      background: url("../images/icon-call.png") no-repeat;
       &:hover,
       &:active {
-        background: url('../images/icon-call-active.png') no-repeat;
+        background: url("../images/icon-call-active.png") no-repeat;
       }
     }
     .icon-facebook {
-      background: url('../images/icon-facebook.png') no-repeat;
+      background: url("../images/icon-facebook.png") no-repeat;
       &:hover,
       &:active {
-        background: url('../images/icon-facebook-active.png') no-repeat;
+        background: url("../images/icon-facebook-active.png") no-repeat;
       }
     }
     .icon-twitter {
-      background: url('../images/icon-twitter.png') no-repeat;
+      background: url("../images/icon-twitter.png") no-repeat;
       &:hover,
       &:active {
-        background: url('../images/icon-twitter-active.png') no-repeat;
+        background: url("../images/icon-twitter-active.png") no-repeat;
       }
     }
     .icon-minimize {
-      background: url('../images/icon-minimize.png') no-repeat;
+      background: url("../images/icon-minimize.png") no-repeat;
       &:hover,
       &:active {
-        background: url('../images/icon-minimize-active.png') no-repeat;
+        background: url("../images/icon-minimize-active.png") no-repeat;
       }
     }
     .icon-close {
-      background: url('../images/icon-close.png') no-repeat;
+      background: url("../images/icon-close.png") no-repeat;
       &:hover,
       &:active {
-        background: url('../images/icon-close-active.png') no-repeat;
+        background: url("../images/icon-close-active.png") no-repeat;
       }
     }
   }
