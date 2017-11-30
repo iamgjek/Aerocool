@@ -22,3 +22,12 @@ or
 ```bash
 $ ./node_modules/electron/dist/Electron.app/Contents/MacOS/Electron .
 ```
+
+## Strat Dev
+```bash
+$ npm run dev
+```
+or
+```bash
+$ node build/dev-server.js
+```

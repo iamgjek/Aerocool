@@ -57,3 +57,8 @@ a {
   width: $graphicBackground-width;
   background: url("../images/keyimage.jpg") no-repeat;
 }
+
+// custimze for slick
+.slick-slide {
+  width: 100px !important;
+}

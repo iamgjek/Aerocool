@@ -24,12 +24,12 @@ export default {
   },
   mounted: function() {
     $("#anim-linear").click(function() {
-      $("#device0View .mask-block").removeClass("anim-fadein");
-      $("#device0View .mask-block").addClass("animation anim-linear");
+      // $("#device0View .mask-block").removeClass("anim-fadein");
+      $("#device0View .mask-block").toggleClass("animation anim-linear animation-repeat-0");
     });
     $("#anim-fadein").click(function() {
-      $("#device0View .mask-block").removeClass("anim-linear");
-      $("#device0View .mask-block").addClass("animation anim-fadein");
+      // $("#device0View .mask-block").removeClass("anim-linear");
+      $("#device0View .mask-block").toggleClass("animation anim-fadein");
     });
   }
 };

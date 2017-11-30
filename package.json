@@ -6,6 +6,7 @@
   "private": true,
   "main": "elect.js",
   "scripts": {
+    "start": "gulp",
     "dev": "node build/dev-server.js",
     "build": "node build/build.js"
   },
@@ -52,7 +53,26 @@
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.12.2",
-    "webpack-merge": "^0.14.1"
+    "webpack-merge": "^0.14.1",
+    "gulp":"^3.9.1",
+    "gulp-install":"^1.1.0",
+    "gulp-sass":"^3.1.0",
+    "gulp-rename":"^1.2.2",
+    "nedb": "^1.8.0",
+    "electron-prebuilt":"^1.4.13"
+  },
+  "window": {
+    "frame": false,
+    "center": true,
+    "width": 1200,
+    "height": 678,
+    "min-width": 500,
+    "min-height": 400,
+    "max-width": 1200,
+    "max-height": 678,
+    "skip-taskbar": false,
+    "show": true,
+    "resizable": false
   },
   "engines": {
     "node": ">= 4.0.0",

@@ -41,6 +41,7 @@
           <device0Presets></device0Presets>
           <device1Presets></device1Presets>
           <device2Presets></device2Presets>
+          <device3Presets></device3Presets>
         </div>
       </div>
     </div>
@@ -63,11 +64,13 @@
         <device0View></device0View>
         <device1View></device1View>
         <device2View></device2View>
+        <device3View></device3View>
       </div>
       <div id="setting">
         <device0Setting></device0Setting>
         <device1Setting></device1Setting>
         <device2Setting></device2Setting>
+        <device3Setting></device3Setting>
       </div>
     </div>
   </div>
@@ -83,9 +86,9 @@ import device2View from "./device2/View";
 import device0Setting from "./device0/Setting";
 import device1Setting from "./device1/Setting";
 import device2Setting from "./device2/Setting";
-// import device3Presets from './device3/Presets'
-// import device3View from './device3/View'
-// import device3Setting from './device3/Setting'
+import device3Presets from './device3/Presets'
+import device3View from './device3/View'
+import device3Setting from './device3/Setting'
 
 export default {
   name: "container",
@@ -93,12 +96,15 @@ export default {
     device0Presets,
     device1Presets,
     device2Presets,
+    device3Presets,
     device0View,
     device1View,
     device2View,
+    device3View,
     device0Setting,
     device1Setting,
-    device2Setting
+    device2Setting,
+    device3Setting
   },
   data() {
     return {
@@ -107,7 +113,8 @@ export default {
       lists: [
         { id: "0", label: "KEYBOARD", active: true },
         { id: "1", label: "MOUSE", active: false },
-        { id: "2", label: "HEADSET", active: false }
+        { id: "2", label: "HEADSET", active: false },
+        { id: "3", label: "mouse", active: false }
       ]
     };
   },
@@ -124,9 +131,9 @@ export default {
   },
   mounted: function() {
     $(".multiple-items").slick({
-      infinite: true,
+      infinite: false,
       dots: false,
-      arrows: false,
+      arrows: true,
       slidesToShow: 3,
       slidesToScroll: 1
     });
